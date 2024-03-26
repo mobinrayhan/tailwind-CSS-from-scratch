@@ -1,0 +1,18 @@
+# Node.js dependencies
+/node_modules
+
+# Compiled CSS
+/public/css
+
+# Development build artifacts
+/.cache
+/.parcel-cache
+/dist
+
+# Editor files
+.vscode
+.idea
+
+# OS-specific files
+.DS_Store
+Thumbs.db
