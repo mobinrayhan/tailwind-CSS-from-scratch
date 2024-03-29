@@ -4,13 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice</title>
-    <link rel="stylesheet" href="./css/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="p-4">
-    <h1
-      class="before:content[ami] relative mx-auto h-24 w-3/6 overflow-hidden bg-green-400 font-sans text-lg transition-all before:absolute before:left-2/4 before:right-0 before:top-2/4 before:block before:h-10 before:w-10 before:-translate-x-2/4 before:-translate-y-2/4 before:bg-slate-700 before:duration-1000"
-    >
-      Hello world
-    </h1>
+  <body class="bg-zinc-700">
+    <div class="container mx-auto flex h-screen items-center justify-center">
+      <div
+        class="m-8 flex flex-col overflow-hidden rounded-md bg-zinc-800 md:flex-row"
+      >
+        <img
+          class="h-80 scale-[0.94] cursor-pointer rounded-t-md object-fill transition-all duration-300 hover:scale-100 md:h-64 md:rounded-md"
+          src="https://tailwindfromscratch.com/mini-projects/email-subscribe/images/image.jpg"
+          alt=""
+        />
+
+        <div
+          class="flex flex-col gap-4 p-6 text-center text-gray-200 md:gap-6 md:p-12 md:text-start"
+        >
+          <h3 class="font-serif text-xl tracking-wide">
+            Get diet and fitness tips in your inbox
+          </h3>
+          <p class="max-w-xs self-start text-sm tracking-wide">
+            Eat better and exercise better. Sign up for the Diet &toea; Fitness
+            newsletter.
+          </p>
+
+          <form class="flex flex-col gap-4 md:flex-row">
+            <input
+              type="email"
+              class="flex-1 border border-gray-400 bg-zinc-800 p-2 outline-none placeholder:text-center placeholder:text-sm valid:border-green-500 focus:invalid:border-red-500"
+              placeholder="Enter Your  email address"
+              required
+            />
+            <button
+              class="rounded-md bg-lime-500 p-3 text-sm text-gray-800 transition-all duration-700 hover:bg-lime-700 hover:text-gray-200"
+              type="submit"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
